@@ -4,11 +4,11 @@ const JobPostingSchema = new mongoose.Schema(
   {
     title: { // Job title
       type: String,
-      require
+      required: true
     },
     description: {
       type: String,
-      require
+      required: true
     },
     location: {
       type: String,
@@ -18,14 +18,14 @@ const JobPostingSchema = new mongoose.Schema(
     },
     contact: {
       type: String,
-      require
+      required: true
     },
     email: {
       type: String,
-      require
+      required: true
     },
-    isActive: {  // field for archiving job post
-      type: boolean,
+    is_active: {  // field for archiving job post
+      type: Boolean,
       default: true
     }
   },
